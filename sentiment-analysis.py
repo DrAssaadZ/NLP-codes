@@ -24,10 +24,10 @@ stopwords = set(w.rstrip() for w in open('stopwords.txt'))
 
 # load the reviews
 # data courtesy of http://www.cs.jhu.edu/~mdredze/datasets/sentiment/index2.html
-positive_reviews = BeautifulSoup(open('electronics/positive.review').read(), features="html5lib")
+positive_reviews = BeautifulSoup(open('Data/positive.review').read(), features="html5lib")
 positive_reviews = positive_reviews.findAll('review_text')
 
-negative_reviews = BeautifulSoup(open('electronics/negative.review').read(), features="html5lib")
+negative_reviews = BeautifulSoup(open('Data/negative.review').read(), features="html5lib")
 negative_reviews = negative_reviews.findAll('review_text')
 
 
